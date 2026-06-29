@@ -264,6 +264,35 @@ body {
         width: 60px;
         height: 60px;
     }
+
+    .team-member-thumbnail {
+      width: 70% !important;
+    }
+
+    .team-card {
+      justify-content: center !important;
+      text-align: center !important;
+    }
+
+    .carousel-item .mini-card{
+        min-width:60px;
+        padding:8px 12px;
+        font-size:5px !important;
+    }
+    .carousel-item .mini-card strong{
+        font-size:12px !important;
+    }
+    .carousel-item .mini-card small{
+        font-size:10px !important;
+    }
+    .carousel-item .custom-list ul{
+        padding-left: 10px !important;
+
+    }
+    .carousel-item .custom-list li{
+        font-size:12px !important;
+    }
+
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

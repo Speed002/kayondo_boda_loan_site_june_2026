@@ -50,7 +50,7 @@
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight">
                                     <span class="boda-badge badge badge-danger px-3 py-2">Boda Boda Loan</span><br>
                                     <span>Funa Entambula Ku <span style="color:#105faf;">Loan Leero</span>.</span></h1>
-                                    <p class="carousel-item-description text-gray-600 leading-relaxed mt-3" data-animation="animated fadeInRight">
+                                    <p class="d-none d-md-block carousel-item-description text-gray-600 leading-relaxed mt-3" data-animation="animated fadeInRight">
                                     Start your journey to owning a boda boda today with a small initial deposit and flexible ownership terms.
                                     </p>                                
                             </div>
@@ -95,7 +95,7 @@
                         <div class="row d-flex flex-column-reverse flex-sm-row">
                             <div class="col-md-6">
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight"><span><span style="color: #105faf;">Tuuka</span> ku birooto byo</span></h1>
-                                    <p class="carousel-item-description text-gray-600 leading-relaxed mt-3" data-animation="animated fadeInRight">
+                                    <p class="d-none d-md-block carousel-item-description text-gray-600 leading-relaxed mt-3" data-animation="animated fadeInRight">
                                         Affordable loans to help you achieve your goals and support the ones you love. Because every dream matters — for you and your family</p>                                
                             </div>
                             <div class="col-md-6 position-relative">
@@ -120,8 +120,8 @@
                     <div class="carousel-item">
                         <div class="row d-flex flex-column-reverse flex-sm-row">
                             <div class="col-md-6">
-                                <h1 class="carousel-item-title" data-animation="animated fadeInRight"><span><span style="color: #105faf;">Weekly <br></span> mini-statements.</span></h1>
-                                    <p class="carousel-item-description text-gray-600 leading-relaxed mt-3" data-animation="animated fadeInRight">
+                                <h1 class="carousel-item-title" data-animation="animated fadeInRight"><span><span style="color: #105faf;">With Weekly <br></span> mini-statements.</span></h1>
+                                    <p class="d-none d-md-block carousel-item-description text-gray-600 leading-relaxed mt-3" data-animation="animated fadeInRight">
                                         Kayondo enables you track your loan progress using weekly mini-statements sent to your phone that help you track how much you have paid so far, and how much you are left with.</p>                                
 
                             </div>
@@ -135,7 +135,7 @@
                             <div class="col-md-6">
                                 <!-- <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="03"><span>Ng’abalala ababakikoze, tojjukira mabega.</span></h1> -->
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight"><span>Bera Ng’abalala <span style="color: #105faf;">abakikoze</span>.</span></h1>
-                                <p data-animation="animated fadeInRight">Thousands of riders are transforming their lives through ownership. Your journey can start today.</p>
+                                <p class="d-none d-md-block" data-animation="animated fadeInRight">Thousands of riders are transforming their lives through ownership. Your journey can start today.</p>
                             </div>
                             <div class="col-md-6 position-relative">
                                 <img src="images/stacked.png" alt="Remarkable Digital Products" class="img-fluid w-80 curved-image" width="372px">
@@ -204,12 +204,12 @@
                     <h2 class="section-title">N’abalala bangi <span style="color: #105faf;">abaataddewo</span></h2>
                     <div class="call_us">
                         <h3 class="section-title">Call us on:</h3>
-                        <span style="font-size:18px; background-color: #105faf; color: white; border-radius: 10px; padding: 10px;"><strong>+256 20 0999081<span style="color: black;"> - Kireka, Kampala</span></strong></span>
-                        <br><br><br>
-                        <span style="font-size:18px; background-color: #105faf; color: white; border-radius: 10px; padding: 10px;"><strong>+256 20 0998998<span style="color: black;"> - Masaka, Lwengo</span></strong></span>
-                        <br><br><br>
-                        <p style="color: white;">Call Us Now! Or Schedule a Meeting With Us Now, We always get back. Ohh Yes we do!
-                        </p>
+                        <div class="flex flex-row gap-4">
+                            <p style="font-size:18px; background-color: #105faf; color: white; border-radius: 10px; padding: 10px;"><strong>+256 20 0999081<span style="color: black;"> - Kireka, Kampala</span></strong></p>
+                            <p style="font-size:18px; background-color: #105faf; color: white; border-radius: 10px; padding: 10px;"><strong>+256 20 0998998<span style="color: black;"> - Masaka, Lwengo</span></strong></p>
+                            <p style="color: white;">Call Us Now! Or Schedule a Meeting With Us Now, We always get back. Ohh Yes we do!
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7 wow fadeInRight">
@@ -290,13 +290,12 @@
             <div class="row">
                 <div class="col-md-4 wow fadeInUp">
                     <h2 class="section-title text-white">Boda Boda Loan Requirements & <span style="color: #357ec6;">Processing Cycle</span></h2>
-                        <br>
-                        <a href="#services" class="fw-bold text-white bg-danger p-2 rounded-lg" style="text-decoration: none;">
-                            View Our Offers To You →
-                        </a>
                 </div>
                 <div class="col-md-8 d-flex flex-column justify-content-center wow fadeInUp">
-                    <img src="images/process.png" alt="loan processing" style="border-radius: 10px;">
+                    <!-- Show on md and larger -->
+                    <img src="images/process.png" class="d-none d-md-block" alt="loan processing" style="border-radius: 10px;">
+                    <!-- Show only on screens smaller than md -->
+                    <img src="images/process_phone.png" class="d-block d-md-none" alt="loan processing" style="border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -305,14 +304,15 @@
     <section class="hiro-section requirements">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 d-flex flex-column justify-content-center wow fadeInUp">
-                    <img src="images/offers.png" alt="loan processing" style="border-radius: 10px;">
-                </div>
                 <div class="col-md-4 wow fadeInUp">
-                    <h2 class="section-title text-white">The Package and Our Full <span class="text-danger">Offer To You</span></h2>
-                        <br>
-                        <p style="color: white;">As you finalize your loan application, you can look forward to receiving your vehicle fully prepared, with a complete set of accessories and a full tank of fuel waiting for you, providing a seamless and convenient handover experience.
-                        </p>
+                    <h2 class="section-title d-none d-md-block" style="color: #357ec6;">The Package and Our Full <span class="text-danger">Offer To You</span></h2>
+                    <h2 class="section-title d-block d-md-none" style="color: #357ec6;">The Package and Our Full <span class="text-danger">Offer To You</span></h2>
+                    <p style="color: white;" class="d-none d-md-block">As you finalize your loan application, you can look forward to receiving your vehicle fully prepared, with a complete set of accessories and a full tank of fuel waiting for you, providing a seamless and convenient handover experience.
+                    </p>
+                </div>
+                <div class="col-md-8 d-flex flex-column justify-content-center wow fadeInUp">
+                    <img src="images/offers.png" class="d-none d-md-block" alt="loan processing" style="border-radius: 10px;">
+                    <img src="images/offer_phone.png" class="d-block d-md-none" alt="loan processing" style="border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -348,7 +348,7 @@
                 </div>
                 <div class="col-md-5 wow fadeInUp">
                     <h2 class="section-title">About <span style="color: #105faf;">Us</span></h2>
-                    <p class="text-white">
+                    <p class="text-white d-none d-md-block">
                         At Kayondo Boda Loans, we are committed to helping Ugandans achieve the dream of motorcycle ownership without the burden of paying the full purchase price upfront. Through our simple, flexible, and transparent hire purchase program, riders can acquire a motorcycle and pay for it through affordable weekly installments tailored to their earning capacity.
                     </p>
                     <p class="text-white">With installments starting from as low as 60,000 UGX, getting your own boda boda has never been easier. Join thousands of satisfied riders who are already earning, growing, and building a better future with us. Your dream, your pace, our support.</p>
